@@ -1,0 +1,34 @@
+{
+  "query": "PostgreSQL requests are timing out and the connection pool is full. What should I check?",
+  "answer": "active connections, slow queries, lock waits, pool saturation, database latency, and recent schema or index changes.",
+  "provider": "hf_local",
+  "model_name": "google/flan-t5-small",
+  "retrieval_model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "latency_ms": 1354.098,
+  "sources": [
+    {
+      "rank": 1,
+      "score": 0.761772,
+      "source_path": "data\\knowledge\\database-runbook.md",
+      "title": "Database Timeout Runbook",
+      "chunk_index": 0,
+      "text": "# Database Timeout Runbook Database requests can time out when connection pools are exhausted, queries are blocked, indexes are missing, or the database server is under CPU or I/O pressure. Start by checking active connections, slow queries, lock waits, pool saturation, database latency, and recent schema or index changes. For PostgreSQL, inspect pg_stat_activity and long-running queries. Verify that application connection limits align with the database max_connections setting. A saturated pool often causes requests to wait before a query even reaches"
+    },
+    {
+      "rank": 2,
+      "score": 0.54633,
+      "source_path": "data\\knowledge\\database-runbook.md",
+      "title": "Database Timeout Runbook",
+      "chunk_index": 1,
+      "text": "limits align with the database max_connections setting. A saturated pool often causes requests to wait before a query even reaches the database. Mitigation can include terminating pathological queries, increasing pool capacity only when the server has headroom, adding or correcting indexes, reducing transaction duration, and rolling back a recent database change. Avoid blindly increasing timeouts because that can hide an overloaded database and increase resource contention. After recovery, capture the slow-query evidence, connection-pool metrics, lock information, and the change that"
+    },
+    {
+      "rank": 3,
+      "score": 0.335851,
+      "source_path": "data\\knowledge\\database-runbook.md",
+      "title": "Database Timeout Runbook",
+      "chunk_index": 2,
+      "text": "overloaded database and increase resource contention. After recovery, capture the slow-query evidence, connection-pool metrics, lock information, and the change that triggered the incident."
+    }
+  ]
+}

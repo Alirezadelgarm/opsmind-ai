@@ -1,0 +1,22 @@
+[
+  {
+    "query": "PostgreSQL requests are timing out and the connection pool is exhausted. What should I check?",
+    "expected_source": "database-runbook.md",
+    "required_keywords": ["connection", "pool", "database"]
+  },
+  {
+    "query": "A Kubernetes pod is stuck in CrashLoopBackOff after deployment. What should I inspect?",
+    "expected_source": "kubernetes-runbook.md",
+    "required_keywords": ["pod", "logs", "restart"]
+  },
+  {
+    "query": "Users report packet loss and unstable service connectivity. What should I investigate?",
+    "expected_source": "network-runbook.md",
+    "required_keywords": ["packet", "network", "latency"]
+  },
+  {
+    "query": "Redis latency increased and cache hit rate dropped. What are the likely checks?",
+    "expected_source": "redis-cache-runbook.md",
+    "required_keywords": ["redis", "cache", "memory"]
+  }
+]

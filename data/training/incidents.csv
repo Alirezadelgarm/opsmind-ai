@@ -1,0 +1,46 @@
+text,category
+postgresql connection pool exhausted and queries are timing out,database
+database deadlock detected during transaction,database
+mysql replication lag is increasing rapidly,database
+slow sql query causing database latency,database
+postgres database connection refused by application,database
+database disk usage is high and writes are slow,database
+too many database connections opened,database
+query execution time increased after index change,database
+database primary node unavailable,database
+transaction rollback caused by deadlock,database
+postgresql vacuum is blocking queries,database
+database lock contention is high,database
+connection to mysql server lost,database
+database schema migration failed,database
+sql query timeout on orders table,database
+packet loss detected between gateway and api service,network
+dns resolution failed for internal service,network
+network latency increased between regions,network
+tcp connection timeout to upstream host,network
+load balancer cannot reach backend servers,network
+high packet loss on network interface,network
+service unreachable because route is missing,network
+dns lookup timeout for database hostname,network
+network connection reset by peer,network
+firewall rule blocks incoming traffic,network
+gateway reports connection timeout,network
+intermittent network connectivity between nodes,network
+network interface is dropping packets,network
+routing table misconfiguration caused outage,network
+api requests fail due to dns errors,network
+application process crashed with null pointer exception,application
+api service returns internal server error,application
+worker process stopped after unhandled exception,application
+application memory leak causes process restart,application
+python service raises attribute error during request,application
+web application deployment failed to start,application
+background worker crashes while processing jobs,application
+api returns 500 after new release,application
+application thread pool is exhausted,application
+service process exits because configuration is invalid,application
+application code throws runtime exception,application
+worker queue consumer failed after code deployment,application
+web server process repeatedly restarts,application
+application startup fails due to missing environment variable,application
+api handler crashes on invalid payload,application

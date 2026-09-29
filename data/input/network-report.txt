@@ -1,0 +1,2 @@
+Network timeout errors were detected between the application service and the internal API.
+Packet loss was intermittent and affected several requests.

@@ -1,0 +1,75 @@
+{
+  "query_count": 6,
+  "top_k": 3,
+  "hit_at_1": 1.0,
+  "hit_at_k": 1.0,
+  "mean_reciprocal_rank": 1.0,
+  "cases": [
+    {
+      "query": "PostgreSQL requests are timing out and the connection pool is full. What should I check?",
+      "expected_source": "database-runbook.md",
+      "reciprocal_rank": 1.0,
+      "rank": 1,
+      "retrieved_sources": [
+        "database-runbook.md",
+        "database-runbook.md",
+        "database-runbook.md"
+      ]
+    },
+    {
+      "query": "Users see packet loss and intermittent connectivity after a firewall change.",
+      "expected_source": "network-runbook.md",
+      "reciprocal_rank": 1.0,
+      "rank": 1,
+      "retrieved_sources": [
+        "network-runbook.md",
+        "network-runbook.md",
+        "database-runbook.md"
+      ]
+    },
+    {
+      "query": "The service keeps restarting after a new deployment and logs show an exception.",
+      "expected_source": "application-runbook.md",
+      "reciprocal_rank": 1.0,
+      "rank": 1,
+      "retrieved_sources": [
+        "application-runbook.md",
+        "application-runbook.md",
+        "kubernetes-runbook.md"
+      ]
+    },
+    {
+      "query": "Redis is evicting keys and latency is increasing because memory is full.",
+      "expected_source": "redis-cache-runbook.md",
+      "reciprocal_rank": 1.0,
+      "rank": 1,
+      "retrieved_sources": [
+        "redis-cache-runbook.md",
+        "redis-cache-runbook.md",
+        "database-runbook.md"
+      ]
+    },
+    {
+      "query": "A Kubernetes pod is stuck in CrashLoopBackOff and I need the previous container logs.",
+      "expected_source": "kubernetes-runbook.md",
+      "reciprocal_rank": 1.0,
+      "rank": 1,
+      "retrieved_sources": [
+        "kubernetes-runbook.md",
+        "kubernetes-runbook.md",
+        "application-runbook.md"
+      ]
+    },
+    {
+      "query": "HTTPS clients reject the service because the certificate expired or the chain is incomplete.",
+      "expected_source": "tls-runbook.md",
+      "reciprocal_rank": 1.0,
+      "rank": 1,
+      "retrieved_sources": [
+        "tls-runbook.md",
+        "tls-runbook.md",
+        "application-runbook.md"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "query_count": 4,
+  "source_hit_rate": 1.0,
+  "mean_keyword_recall": 0.41666666666666663,
+  "cases": [
+    {
+      "query": "PostgreSQL requests are timing out and the connection pool is exhausted. What should I check?",
+      "expected_source": "database-runbook.md",
+      "required_keywords": [
+        "connection",
+        "pool",
+        "database"
+      ],
+      "source_hit": true,
+      "source_rank": 1,
+      "keyword_recall": 1.0,
+      "answer": "active connections, slow queries, lock waits, pool saturation, database latency, and recent schema or index changes."
+    },
+    {
+      "query": "A Kubernetes pod is stuck in CrashLoopBackOff after deployment. What should I inspect?",
+      "expected_source": "kubernetes-runbook.md",
+      "required_keywords": [
+        "pod",
+        "logs",
+        "restart"
+      ],
+      "source_hit": true,
+      "source_rank": 1,
+      "keyword_recall": 0.6666666666666666,
+      "answer": "kubectl describe pod and kubectl logs --previous to capture evidence from the failed container. Mitigation may be a rollback, corrected configuration, repaired dependency, adjusted probe, or resource change. Confirm that the pod remains healthy and that traffic is successfully served before closing the incident."
+    },
+    {
+      "query": "Users report packet loss and unstable service connectivity. What should I investigate?",
+      "expected_source": "network-runbook.md",
+      "required_keywords": [
+        "packet",
+        "network",
+        "latency"
+      ],
+      "source_hit": true,
+      "source_rank": 1,
+      "keyword_recall": 0.0,
+      "answer": "[Source 3: database-runbook.md / chunk 2]"
+    },
+    {
+      "query": "Redis latency increased and cache hit rate dropped. What are the likely checks?",
+      "expected_source": "redis-cache-runbook.md",
+      "required_keywords": [
+        "redis",
+        "cache",
+        "memory"
+      ],
+      "source_hit": true,
+      "source_rank": 1,
+      "keyword_recall": 0.0,
+      "answer": "evictions"
+    }
+  ]
+}

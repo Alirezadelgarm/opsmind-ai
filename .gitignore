@@ -1,0 +1,51 @@
+# Virtual environments and local configuration
+.venv/
+.env
+.env.*
+!.env.example
+
+# Python caches / tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Runtime outputs and generated artifacts
+data/output/*
+!data/output/.gitkeep
+data/models/*
+!data/models/.gitkeep
+data/vector_store/
+
+# ML model artifacts (defense-in-depth)
+*.joblib
+*.pt
+*.pth
+*.safetensors
+
+# Local updater backups
+.stage*-backup/
+.v1.0.0-backup/
+.v1.0.1-backup/
+
+.v1.0.2-backup/
+
+.portfolio-backup/

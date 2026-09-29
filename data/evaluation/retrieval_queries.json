@@ -1,0 +1,26 @@
+[
+  {
+    "query": "PostgreSQL requests are timing out and the connection pool is full. What should I check?",
+    "expected_source": "database-runbook.md"
+  },
+  {
+    "query": "Users see packet loss and intermittent connectivity after a firewall change.",
+    "expected_source": "network-runbook.md"
+  },
+  {
+    "query": "The service keeps restarting after a new deployment and logs show an exception.",
+    "expected_source": "application-runbook.md"
+  },
+  {
+    "query": "Redis is evicting keys and latency is increasing because memory is full.",
+    "expected_source": "redis-cache-runbook.md"
+  },
+  {
+    "query": "A Kubernetes pod is stuck in CrashLoopBackOff and I need the previous container logs.",
+    "expected_source": "kubernetes-runbook.md"
+  },
+  {
+    "query": "HTTPS clients reject the service because the certificate expired or the chain is incomplete.",
+    "expected_source": "tls-runbook.md"
+  }
+]

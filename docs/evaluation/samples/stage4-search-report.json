@@ -1,0 +1,34 @@
+{
+  "query": "a kubernetes pod keeps restarting in CrashLoopBackOff",
+  "embedding_model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "top_k": 3,
+  "hits": [
+    {
+      "rank": 1,
+      "chunk_id": "bd387aa7-b755-517c-bf71-41d197d72e00",
+      "source_path": "data\\knowledge\\kubernetes-runbook.md",
+      "title": "Kubernetes CrashLoopBackOff Runbook",
+      "chunk_index": 0,
+      "score": 0.86478,
+      "text": "# Kubernetes CrashLoopBackOff Runbook A pod in CrashLoopBackOff is repeatedly starting and failing. Inspect pod events, container logs including the previous container instance, readiness and liveness probes, resource limits, mounted configuration, secrets, and the image or deployment revision. Common causes include an application exception during startup, a missing environment variable, an unreachable dependency, an incorrect command, or an out-of-memory kill. Use kubectl describe pod and kubectl logs --previous to capture evidence from the failed container. Mitigation may be a rollback,"
+    },
+    {
+      "rank": 2,
+      "chunk_id": "a52a77d1-6f00-5c44-a5b2-3f1b7c8205b3",
+      "source_path": "data\\knowledge\\kubernetes-runbook.md",
+      "title": "Kubernetes CrashLoopBackOff Runbook",
+      "chunk_index": 1,
+      "score": 0.707876,
+      "text": "Use kubectl describe pod and kubectl logs --previous to capture evidence from the failed container. Mitigation may be a rollback, corrected configuration, repaired dependency, adjusted probe, or resource change. Confirm that the pod remains healthy and that traffic is successfully served before closing the incident."
+    },
+    {
+      "rank": 3,
+      "chunk_id": "58290cc4-fb1d-51e1-a367-a26a97721489",
+      "source_path": "data\\knowledge\\application-runbook.md",
+      "title": "Application Crash Runbook",
+      "chunk_index": 0,
+      "score": 0.414239,
+      "text": "# Application Crash Runbook Application processes may crash because of uncaught exceptions, memory exhaustion, dependency failures, invalid configuration, or bad deployments. Check the application logs around the first failure, process exit codes, memory and CPU use, health checks, deployment history, and dependency status. When the incident follows a release, compare the failing version with the previous healthy version. Repeated restarts can hide the original exception, so preserve the first stack trace and relevant request or job context before restarting services"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "source_documents": 6,
+  "failed_documents": 0,
+  "chunk_count": 13,
+  "embedding_model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "vector_dimension": 384,
+  "collection_name": "opsmind_knowledge",
+  "vector_store_path": "data\\vector_store\\qdrant",
+  "vector_store_url": null
+}
